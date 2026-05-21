@@ -1,0 +1,9 @@
+﻿{
+  "name": "HexRowFaster",
+  "version_number": "1.0.0",
+  "website_url": "https://github.com/guillenjgg/valheim-hex-row-faster",
+  "description": "Row faster.",
+  "dependencies": [
+    "denikson-BepInExPack_Valheim-5.4.2333"
+  ]
+}
