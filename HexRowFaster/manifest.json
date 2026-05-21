@@ -2,7 +2,7 @@
   "name": "HexRowFaster",
   "version_number": "1.0.0",
   "website_url": "https://github.com/guillenjgg/valheim-hex-row-faster",
-  "description": "Row faster.",
+  "description": "Tired of your viking rowing like a snail? HexRowFaster to the rescue!",
   "dependencies": [
     "denikson-BepInExPack_Valheim-5.4.2333"
   ]
