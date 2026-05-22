@@ -10,7 +10,7 @@ namespace HexRowFaster
     {
         private const string PluginGuid = "com.hex.rowfaster";
         private const string PluginName = "HexRowFaster";
-        private const string PluginVersion = "1.0.0";
+        private const string PluginVersion = "1.1.0";
 
         private ConfigEntry<bool> _isModEnabled;
         private ConfigEntry<ForceMultiplier> _forceMultiplier;
