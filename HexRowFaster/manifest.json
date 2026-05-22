@@ -1,6 +1,6 @@
 ﻿{
   "name": "HexRowFaster",
-  "version_number": "1.0.0",
+  "version_number": "1.1.0",
   "website_url": "https://github.com/guillenjgg/valheim-hex-row-faster",
   "description": "Tired of your viking rowing like a snail? HexRowFaster to the rescue!",
   "dependencies": [
