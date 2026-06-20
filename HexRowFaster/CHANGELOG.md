@@ -1,5 +1,8 @@
 # Changelog
 
+## v1.1.1
+- Add Discord support link
+
 ## v1.1.0
 
 - Now you can adjust rowing/backward speed on the fly via the BepInEx configuration manager.
