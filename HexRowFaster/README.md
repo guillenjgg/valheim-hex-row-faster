@@ -14,6 +14,8 @@ HexRowFaster boosts the ship's paddle force, making rowing, reversing, and initi
 - Configurable force multiplier presets
 - Adjust speed on the fly via BepInEx Configuration Manager
 
+![Configuration](images/config.png)
+
 ## Multiplayer
 
 HexRowFaster is designed so that only the local player controlling the ship has their rowing force modified.
@@ -112,6 +114,11 @@ BepInEx/plugins/HexRowFaster/
 
 3. Launch the game
 
-## Source
+## Support and Feedback
+Report bugs, request features, or provide feedback:
 
-Developed by Hex Viking.
+- Discord: https://discord.gg/wU2FXD94v4
+
+## Source Code
+
+- GitHub: https://github.com/guillenjgg/valheim-hex-row-faster

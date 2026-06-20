@@ -10,7 +10,7 @@ namespace HexRowFaster
     {
         private const string PluginGuid = "com.hex.rowfaster";
         private const string PluginName = "HexRowFaster";
-        private const string PluginVersion = "1.1.0";
+        private const string PluginVersion = "1.1.1";
 
         private ConfigEntry<bool> _isModEnabled;
         private ConfigEntry<ForceMultiplier> _forceMultiplier;
@@ -42,16 +42,17 @@ namespace HexRowFaster
             HarmonyInstance = new Harmony(PluginGuid);
             HarmonyInstance.PatchAll();
 
-            Log.LogInfo($"Plugin {PluginName} v{PluginVersion} loaded.");
+            Log.LogInfo($"{PluginName} v{PluginVersion} loaded.");
         }
 
         private void OnDestroy()
         {
-            Log.LogInfo($"Plugin {PluginName} v{PluginVersion} unloaded.");
+            Log.LogInfo($"{PluginName} v{PluginVersion} unloaded.");
 
             HarmonyInstance?.UnpatchSelf();
             HarmonyInstance = null;
             Instance = null;
+            Log = null;
         }
     }
 
