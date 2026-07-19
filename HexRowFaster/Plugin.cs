@@ -2,6 +2,7 @@
 using BepInEx.Configuration;
 using BepInEx.Logging;
 using HarmonyLib;
+using UnityEngine;
 
 namespace HexRowFaster
 {
@@ -10,17 +11,19 @@ namespace HexRowFaster
     {
         private const string PluginGuid = "com.hex.rowfaster";
         private const string PluginName = "HexRowFaster";
-        private const string PluginVersion = "1.1.1";
+        private const string PluginVersion = "1.2.0";
 
         private ConfigEntry<bool> _isModEnabled;
         private ConfigEntry<ForceMultiplier> _forceMultiplier;
+        private ConfigEntry<KeyboardShortcut> _brakeKey;
 
         internal static ManualLogSource Log;
         internal static Plugin Instance;
         internal static Harmony HarmonyInstance;
         internal static bool IsModEnabled => Instance?._isModEnabled.Value ?? false;
         internal static ForceMultiplier ForceMultiplier => Instance?._forceMultiplier.Value ?? ForceMultiplier.Cruising;
-        
+        internal static KeyboardShortcut BrakeKey => Instance?._brakeKey.Value ?? new KeyboardShortcut(KeyCode.LeftShift);
+
         private void Awake()
         {
             Instance = this;
@@ -38,7 +41,13 @@ namespace HexRowFaster
                 "Force Multiplier",
                 ForceMultiplier.Cruising,
                 "How fast do you want to go?");
-    
+
+            _brakeKey = Config.Bind(
+                "Brake",
+                "Brake Key",
+                new KeyboardShortcut(KeyCode.LeftShift),
+                "Hold this key while piloting a ship to apply the brakes.");
+
             HarmonyInstance = new Harmony(PluginGuid);
             HarmonyInstance.PatchAll();
 
