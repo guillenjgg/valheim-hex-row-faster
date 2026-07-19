@@ -2,7 +2,6 @@
 
 Row faster going forward and backwards!
 
-Tired of rowing your ship at snail speed when the wind dies?  
 HexRowFaster boosts the ship's paddle force, making rowing, reversing, and initial movement feel much better.
 
 ## Features
@@ -13,8 +12,10 @@ HexRowFaster boosts the ship's paddle force, making rowing, reversing, and initi
 - Faster straight-line paddling
 - Configurable force multiplier presets
 - Adjust speed on the fly via BepInEx Configuration Manager
+- Slow down your ship with a configurable brake key (default: Left Shift)
 
-![Configuration](images/config.png)
+![Configuration](https://raw.githubusercontent.com/guillenjgg/valheim-hex-mod-images/main/hexrowfaster/hexrowfaster_1.png)
+![Configuration](https://raw.githubusercontent.com/guillenjgg/valheim-hex-mod-images/main/hexrowfaster/hexrowfaster_2.png)
 
 ## Multiplayer
 
@@ -89,6 +90,11 @@ Enable = true
 # Setting type: ForceMultiplier
 # Default value: Cruising
 Force Multiplier = Cruising
+
+## Hold this key while piloting a ship to apply the brakes.
+# Setting type: KeyboardShortcut
+# Default value: Left Shift
+Brake Key = Left Shift
 ```
 
 ## Technical Notes
